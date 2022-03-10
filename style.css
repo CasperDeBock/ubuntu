@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/ub.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+nav {
+  width: 7vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.404);
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  align-items: center;
+}
+nav a,
+nav button {
+  width: 60%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+a,
+a:active {
+  list-style: none;
+  text-decoration: 0;
+  color: white;
+  border: 0;
+}
+
+nav a:hover,
+nav button:hover {
+  width: 65%;
+  transition: 0.5s;
+}
+nav button {
+  border: 0;
+  background-color: transparent;
+}
+
+a img {
+  width: 100%;
+  height: auto;
+}
+button img {
+  width: 100%;
+  height: auto;
+}
+main {
+  padding: 5vh 5vh;
+}
+main img {
+  width: 60px;
+}
+
+.terminal {
+  position: absolute;
+  z-index: 9;
+  width: 30%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.397);
+
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.navterm {
+  z-index: 10;
+  height: 5vh;
+  background-color: #2c2c2c;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vh;
+}
+
+.titleos {
+  font-size: 0.8em;
+}
+.randomicoontje img {
+  width: 20px;
+  height: 20px;
+}
+
+.randomicoontje2 img {
+  width: 25px;
+  height: 20px;
+}
+
+.shownav {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.hidenav {
+  left: -100vw;
+  top: 50%;
+  position: absolute;
+}
+
+.gr {
+  color: limegreen;
+}
+.blu {
+  color: blue;
+}
+.name {
+  font-size: 0.8em;
+}
+
+.line {
+  display: flex;
+}
+
+input[type="text"] {
+  margin-left: 5px;
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+input[type="text"]:focus {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+.hov {
+  cursor: pointer;
+}
+
+.puttie {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+}
+
+.showputin {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+}
+
+.naaldingkie {
+  display: flex;
+  flex-direction: column;
+}
+.naaldingkie span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transition {
+  transition: 1s;
+}
+
+.explorer {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.explorernav {
+  height: 10%;
+  background-color: #504e47;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vh;
+}
+
+.explorercontent {
+  height: 90%;
+  display: flex;
+}
+
+.contentleftnav {
+  width: 25%;
+  background-color: #e6e5e3;
+}
+.blokleftnav {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  padding: 2vh 1vw;
+  color: rgb(78, 78, 78);
+}
+.blokleftnav:hover {
+  background-color: #f27a49;
+  color: white;
+  cursor: pointer;
+}
+.blokleftnav:hover .logo img {
+  filter: invert(1);
+}
+.logo img {
+  width: 12px;
+}
+.namelog {
+  font-size: 0.8em;
+  margin-left: 2vh;
+}
+.contentmain {
+  width: 80%;
+  height: 10%;
+  padding: 2vh 2vw;
+  display: flex;
+}
+.arrow {
+  display: flex;
+  background-color: #434040;
+  width: 3vw;
+  height: 4vh;
+  justify-content: space-between;
+}
+.arrow img {
+  width: 15px;
+  filter: invert(1);
+}
+
+.la {
+  width: 30px;
+}
+.dropdown select {
+  background-color: #434040;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  height: 4vh;
+  width: 8vw;
+}
+
+.active {
+  background-color: #f27a49;
+  color: white;
+}
+.active img {
+  filter: invert(1);
+}
+.folderke {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+.folderke img {
+  width: 100%;
+}
+.folderke .naamfolder {
+  color: black;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.m {
+  margin-left: 2vw;
+}

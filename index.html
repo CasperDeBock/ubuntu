@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Casper | Ubuntu</title>
+  </head>
+  <body onload="toonfiles('recent')">
+    <header>
+      <nav>
+      <a href="https://www.google.com/"><img src="images/firefox.png" alt="" /></div></a> 
+      <a href="https://mail.google.com/mail/u/0/#inbox"><img src="images/bird.png" alt="" /></div></a> 
+      <button class="hov" onclick="dropout('explorer')"><img src="images/Capture.PNG" alt="" /></div></button> 
+      <button class="hov" onclick="dropout('term')" ><img src="images/terminal.png" alt="" /></div></button> 
+      </nav>
+    </header>
+    <main>
+        <a class="hov naaldingkie" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+          <img src="images/trash.png" alt="trash">
+        <span>Trash</span>
+        </a>
+        <img class="puttie" id="puttie" src="images/putin.jpg" alt="">
+
+
+        <div class="terminal hidenav " id="term">
+            <div class="navterm" onmouseenter="verwijderdingkie()" id="termnav">
+                <div class="randomicoontje"><img src="images/randomdingkei.PNG" alt=""></div>
+                <div class="titleos">caspercool@caspercool:~</div>
+                <div class="hov randomicoontje2"  onmouseenter="voegdingkietoe()" onclick="weg()"><img src="images/cross.PNG" alt=""></div>
+            </div>
+            <div class="contentterm" id="contentterm">
+                <div class="line">
+                    <div class="name"> <span class="gr" id="groen">caspercool@caspercool</span>:<span class="blu">~</span>$</div>  <input onkeyup="doefunctieidng(event)"  type="text" name="" id="inputie0">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="explorer hidenav" id="explorer">
+          <div class="explorernav">
+            <div class="arrow">
+              <img src="images/icons/arrow-left-square.svg" alt="">
+              <img src="images/icons/arrow-right-square.svg" alt="">
+            </div>
+            <div class="dropdown">
+              <select id="sel">
+                <option value="recent">Recent</option>
+                <option value="home">Home</option>
+                <option value="desktop">Desktop</option>
+                <option value="document">Documents</option>
+                <option value="download">Downloads</option>
+                <option value="music">Music</option>
+                <option value="picture">Pictures</option>
+                <option value="video">Videos</option>
+                <option value="trash">Trash</option>
+                <option value="wifi">Connect</option>
+              </select>
+            </div>
+            <div class="crosses">
+              <img src="images/newcross.png" class="la hov" alt="">
+            </div>
+          </div>
+          <div class="explorercontent">
+            <div class="contentleftnav">
+              <div class="blokleftnav active "onclick="changeactive('recent','0')" id="recent">
+                <div class="logo"><img src="images/icons/clock.svg" alt=""></div>
+                <div class="namelog">Recent</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('home','1')" id="home">
+                <div class="logo"><img src="images/icons/house (1).svg" alt=""></div>
+                <div class="namelog">Home</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('desktop','2')" id="desktop">
+                <div class="logo"><img src="images/icons/folder2-open.svg" alt=""></div>
+                <div class="namelog">Desktop</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('document','3')" id="document">
+                <div class="logo"><img src="images/icons/file-earmark.svg" alt=""></div>
+                <div class="namelog">Documents</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('download','4')" id="download">
+                <div class="logo"><img src="images/icons/arrow-down-circle.svg" alt=""></div>
+                <div class="namelog">Downloads</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('music','5')" id="music">
+                <div class="logo"><img src="images/icons/music-note-beamed.svg" alt=""></div>
+                <div class="namelog">Music</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('picture','6')" id="picture">
+                <div class="logo"><img src="images/icons/camera.svg" alt=""></div>
+                <div class="namelog">Pictures</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('video','7')" id="video">
+                <div class="logo"><img src="images/icons/camera-video.svg" alt=""></div>
+                <div class="namelog">Videos</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('trash','8')" id="trash">
+                <div class="logo"><img src="images/icons/trash3.svg" alt=""></div>
+                <div class="namelog">Trash</div>
+              </div>
+              <div class="blokleftnav" onclick="changeactive('wifi','9')" id="wifi">
+                <div class="logo"><img src="images/icons/wifi.svg" alt=""></div>
+                <div class="namelog">Connect</div>
+              </div>
+            </div>
+            <div class="contentmain" id="contentmain">
+              <div></div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+  
+</html>
